@@ -12,6 +12,13 @@ Proyecto de práctica de nniklab: rediseño desde cero de la landing **negociosc
 | `04-imagenes` | Fotos e ilustraciones preparadas para el modo oscuro |
 | `05-sitio` | Sitio construido: `index.html`, `css/`, `js/`, `img/` |
 
+## Enlaces
+
+- **Sitio publicado (prueba):** https://nniklab.github.io/clase_ux/
+- **Vista previa en Claude Design:** https://claude.ai/artifact/33LTKyE76RhoWP6NVrhJCA
+
+El sitio se publica solo: cada cambio en `05-sitio` dentro de `main` actualiza la rama `gh-pages`, que es la que sirve GitHub Pages.
+
 ## Flujo de trabajo
 
 1. Leer el [brief](01-contexto/brief.md) y la [paleta](02-marca/paleta.md).
@@ -24,6 +31,7 @@ Proyecto de práctica de nniklab: rediseño desde cero de la landing **negociosc
 
 - [x] Estructura de carpetas
 - [x] Brief, paleta y prompt para Stitch
-- [ ] Diseño en Stitch (web y celular)
-- [ ] Imágenes
-- [ ] Sitio construido
+- [x] Diseño en Stitch (web y celular), en `03-diseno/insumos-ux`
+- [x] Vista previa en Claude Design
+- [x] Sitio v0.1 construido y publicado en prueba (`noindex`)
+- [ ] Datos pendientes del cliente: correo, redes, políticas, vigencia de la oferta

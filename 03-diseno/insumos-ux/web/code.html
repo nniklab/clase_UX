@@ -1,0 +1,522 @@
+<!DOCTYPE html><html class="dark" lang="es"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><meta content="web_standard" name="shell-type"><title>Negocios con Diana</title><link href="https://fonts.googleapis.com" rel="preconnect"><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"><link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&amp;family=Manrope:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+          "on-error": "#690005",
+          "on-primary-fixed": "#0d1d29",
+          "on-primary": "#22323f",
+          "primary-fixed": "#d4e4f5",
+          "on-tertiary-container": "#778999",
+          "surface-dim": "#021521",
+          "error": "#ffb4ab",
+          "secondary": "#c3c7c6",
+          "surface-container": "#0f212e",
+          "error-container": "#93000a",
+          "on-tertiary-fixed-variant": "#374957",
+          "on-secondary": "#2d3131",
+          "primary-fixed-dim": "#b8c8d9",
+          "on-surface-variant": "#c4c7cc",
+          "outline": "#8d9196",
+          "primary": "#b8c8d9",
+          "secondary-container": "#434847",
+          "outline-variant": "#43474b",
+          "on-tertiary-fixed": "#0a1d2a",
+          "on-primary-fixed-variant": "#394956",
+          "background": "#021521",
+          "surface-container-low": "#0a1d29",
+          "primary-container": "#11212d",
+          "on-error-container": "#ffdad6",
+          "on-primary-container": "#798998",
+          "surface-bright": "#293b48",
+          "inverse-primary": "#50606e",
+          "surface-container-highest": "#253744",
+          "on-secondary-fixed": "#181c1c",
+          "surface-tint": "#b8c8d9",
+          "tertiary-fixed": "#d2e5f7",
+          "on-background": "#d2e5f6",
+          "surface-variant": "#253744",
+          "inverse-surface": "#d2e5f6",
+          "tertiary-container": "#0e212e",
+          "secondary-fixed": "#dfe3e2",
+          "tertiary": "#b6c9db",
+          "on-surface": "#d2e5f6",
+          "tertiary-fixed-dim": "#b6c9db",
+          "on-tertiary": "#203240",
+          "surface-container-lowest": "#00101b",
+          "on-secondary-fixed-variant": "#434847",
+          "surface": "#021521",
+          "on-secondary-container": "#b2b6b5",
+          "inverse-on-surface": "#20323f",
+          "secondary-fixed-dim": "#c3c7c6",
+          "surface-container-high": "#1a2c38"
+        },
+        "borderRadius": {
+          "DEFAULT": "0.25rem",
+          "lg": "0.5rem",
+          "xl": "0.75rem",
+          "full": "9999px"
+        },
+        "spacing": {
+          "space-lg": "1.5rem",
+          "space-3xl": "6rem",
+          "space-xl": "2.5rem",
+          "gutter": "1.5rem",
+          "space-sm": "0.5rem",
+          "space-2xl": "4rem",
+          "margin": "2rem",
+          "space-xs": "0.25rem",
+          "space-md": "1rem"
+        },
+        "fontFamily": {
+          "body-sm": ["Manrope"],
+          "body-md": ["Manrope"],
+          "display-mobile": ["Bodoni Moda"],
+          "label-lg": ["Manrope"],
+          "headline-sm": ["Bodoni Moda"],
+          "label-sm": ["Manrope"],
+          "label-md": ["Manrope"],
+          "headline-lg-mobile": ["Bodoni Moda"],
+          "headline-lg": ["Bodoni Moda"],
+          "body-lg": ["Manrope"],
+          "display": ["Bodoni Moda"],
+          "headline-md": ["Bodoni Moda"]
+        },
+        "fontSize": {
+          "body-sm": ["13px", {"lineHeight": "20px", "fontWeight": "400"}],
+          "body-md": ["15px", {"lineHeight": "24px", "fontWeight": "400"}],
+          "display-mobile": ["38px", {"lineHeight": "44px", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+          "label-lg": ["14px", {"lineHeight": "20px", "letterSpacing": "0.04em", "fontWeight": "600"}],
+          "headline-sm": ["22px", {"lineHeight": "28px", "fontWeight": "500"}],
+          "label-sm": ["11px", {"lineHeight": "14px", "letterSpacing": "0.08em", "fontWeight": "500"}],
+          "label-md": ["12px", {"lineHeight": "16px", "letterSpacing": "0.06em", "fontWeight": "600"}],
+          "headline-lg-mobile": ["30px", {"lineHeight": "36px", "fontWeight": "500"}],
+          "headline-lg": ["40px", {"lineHeight": "48px", "letterSpacing": "-0.01em", "fontWeight": "500"}],
+          "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+          "display": ["56px", {"lineHeight": "64px", "letterSpacing": "-0.02em", "fontWeight": "600"}],
+          "headline-md": ["28px", {"lineHeight": "36px", "fontWeight": "500"}]
+        }
+      }
+    }
+  }</script><style>
+@keyframes kenBurns {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.07); }
+  100% { transform: scale(1); }
+}
+.animate-ken-burns {
+  animation: kenBurns 22s ease-in-out infinite alternate;
+  will-change: transform;
+  transform-origin: center center;
+}
+@media (prefers-reduced-motion: reduce) {
+  .animate-ken-burns {
+    animation: none !important;
+  }
+}
+</style></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 right-0 z-50 bg-primary-container/95 backdrop-blur-md shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-20 max-w-7xl mx-auto px-margin flex items-center justify-between gap-space-lg"><a class="flex items-center gap-space-xs text-on-surface hover:text-primary transition-colors focus:outline-none" data-path="inicio" href="#inicio"><span class="font-body-lg text-body-lg font-medium tracking-tight">Negocios con</span><span class="font-headline-sm text-headline-sm italic font-normal tracking-wide text-primary-fixed">Diana</span></a><nav class="hidden lg:flex items-center gap-space-xl" data-active-classes="text-on-surface font-semibold"><a aria-current="page" class="transition-colors text-on-surface font-semibold" data-path="inicio" href="#inicio">Inicio</a><a class="font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors" data-path="la-masterclass" href="#la-masterclass">La masterclass</a><a class="font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors" data-path="que-incluye" href="#que-incluye">Qué incluye</a><a class="font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors" data-path="sobre-diana" href="#sobre-diana">Sobre Diana</a></nav><div class="flex items-center gap-space-md"><a class="inline-flex items-center justify-center px-space-lg py-space-sm rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-lg text-label-lg hover:bg-surface-tint hover:text-on-primary transition-all duration-200" href="#adquirir">Adquirir masterclass</a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-20 bg-surface"><div class="flex flex-col w-full text-secondary antialiased selection:bg-secondary-fixed selection:text-on-secondary-fixed">
+<!-- 1. Hero Section -->
+<section class="w-full bg-[#06141B] py-space-2xl md:py-space-3xl overflow-hidden relative" id="inicio"><div class="absolute inset-0 z-0 pointer-events-none overflow-hidden"><img src="https://lh3.googleusercontent.com/aida-public/AB6AXuAD-51yDyXcIppCAJzsap5_Hsrq-hRjXEdLFGVYzWyKVoJ41rdZp4Xm01pkwZKrlUP8MKwhbZwOZXGEQcUKaREjUhRmqGAJXX5-FIcvRnYfusxUEg6OvWq18Ig47W5el6ox_EOJ8_FBfBoMGrD2mcS_vTivW9EKFy66jhYYo4cQOg7g-zW54N7Uk92S4kZFrYgdYbOizRfDdhuBKUt64e0F0Us3Ba2FwRvC7plcE2zh" alt="Diana Yela en su oficina ejecutiva con iluminación cálida" class="w-full h-full object-cover object-center lg:object-right opacity-35 animate-ken-burns"><div class="absolute inset-0 bg-gradient-to-r from-[#06141B] via-[#06141B]/90 to-[#06141B]/40"></div><div class="absolute inset-0 bg-gradient-to-t from-[#06141B] via-transparent to-[#06141B]/60"></div></div><div class="max-w-7xl mx-auto px-margin relative z-10"><div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl lg:gap-space-2xl items-center"><div class="lg:col-span-8 flex flex-col gap-space-md"><div class="inline-flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-[#CCD0CF]"></span><span class="font-label-sm text-label-sm tracking-[0.25em] text-[#9BA8AB] uppercase font-semibold">Bienvenida</span></div><h1 class="font-display text-display-mobile lg:text-display text-[#CCD0CF] leading-tight tracking-tight mt-1">Naciste para liderar y construir lo tuyo propio, sólo falta <span class="italic font-normal">¡Atreverte!</span></h1><p class="font-body-lg text-body-lg text-[#9BA8AB] max-w-2xl leading-relaxed mt-2">Los 7 frenos mentales que te están limitando de emprender, aunque en el fondo ya sabes que quieres hacerlo.</p><div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-space-md pt-space-lg"><a class="inline-flex items-center justify-center px-8 py-4 rounded-full bg-[#CCD0CF] text-[#06141B] font-label-lg text-label-lg font-semibold shadow-lg hover:bg-white hover:scale-[1.02] transition-all duration-300 group" href="https://pay.hotmart.com/I105509477M?bid=1778177175956" rel="noopener noreferrer" target="_blank"><span>Adquirir masterclass</span><span class="material-symbols-outlined ml-2 text-[20px] transition-transform group-hover:translate-x-1">arrow_forward</span></a><a class="inline-flex items-center justify-center px-8 py-4 rounded-full border border-[#9BA8AB] text-[#CCD0CF] font-label-lg text-label-lg font-medium hover:border-[#CCD0CF] hover:bg-[#253745]/50 transition-all duration-300" href="#video-intro"><span class="material-symbols-outlined mr-2 text-[20px]">play_circle</span><span>Ver video</span></a></div><div class="flex items-center gap-6 pt-space-lg"><div class="flex items-center gap-2 text-[#9BA8AB] text-xs"><span class="material-symbols-outlined text-[18px] text-[#CCD0CF]">verified</span><span>Acceso de por vida</span></div><div class="w-1 h-1 rounded-full bg-[#4A5C6A]"></div><div class="flex items-center gap-2 text-[#9BA8AB] text-xs"><span class="material-symbols-outlined text-[18px] text-[#CCD0CF]">bolt</span><span>Aplicación inmediata</span></div></div></div><div class="lg:col-span-4 flex flex-col justify-end lg:items-end"><div class="p-6 rounded-[20px] bg-[#11212D]/85 backdrop-blur-md border border-[#4A5C6A]/80 shadow-2xl max-w-sm w-full"><div class="flex items-center justify-between mb-4"><div class="w-10 h-10 rounded-full bg-[#253745] flex items-center justify-center text-[#CCD0CF]"><span class="material-symbols-outlined text-xl">workspace_premium</span></div><span class="text-[11px] font-semibold uppercase tracking-wider px-2 py-0.5 rounded-full bg-[#253745] text-[#CCD0CF] border border-[#4A5C6A]">Mentora Directa</span></div><p class="font-headline-sm text-lg text-[#CCD0CF] font-medium">Diana Yela</p><p class="text-xs text-[#9BA8AB] mb-4">Mentora &amp; Estratega de Negocios</p><p class="text-xs text-[#9BA8AB] leading-relaxed border-t border-[#4A5C6A]/40 pt-3 italic">«Te acompaño a desarticular los miedos automáticos y edificar tu proyecto con libertad y visión estratégica.»</p></div></div></div></div></section>
+<!-- 2. Video Section -->
+<section class="w-full bg-[#11212D] py-space-2xl md:py-space-3xl relative" id="video-intro">
+<div class="max-w-5xl mx-auto px-margin flex flex-col items-center text-center">
+<span class="font-label-sm text-label-sm tracking-[0.25em] text-[#9BA8AB] uppercase font-semibold mb-3">
+        Descubre la transformación
+      </span>
+<h2 class="font-display text-headline-lg-mobile md:text-headline-lg text-[#CCD0CF] mb-4">
+        Dale clic al video
+      </h2>
+<p class="font-body-md text-body-md text-[#9BA8AB] max-w-xl mx-auto mb-space-xl">
+        Descubre en pocos minutos el enfoque que transformará tu visión de emprender y desarmará los bloqueos que te detienen.
+      </p>
+<!-- Video Player Frame -->
+<div class="w-full relative rounded-[20px] overflow-hidden border border-[#4A5C6A] bg-[#253745] shadow-2xl aspect-video max-w-4xl group">
+<div class="absolute inset-0 bg-gradient-to-tr from-[#06141B] via-[#11212D]/90 to-[#253745]/60"></div>
+<!-- Video Placeholder Background Poster -->
+<div class="w-full h-full flex flex-col items-center justify-center relative p-6">
+<div class="absolute -top-32 -left-32 w-80 h-80 rounded-full bg-[#4A5C6A]/15 blur-3xl pointer-events-none"></div>
+<div class="absolute -bottom-32 -right-32 w-80 h-80 rounded-full bg-[#CCD0CF]/10 blur-3xl pointer-events-none"></div>
+<!-- Central Play Button -->
+<button aria-label="Reproducir video de presentación" class="w-20 h-20 sm:w-24 sm:h-24 rounded-full bg-[#CCD0CF] text-[#06141B] flex items-center justify-center shadow-2xl transition-all duration-300 transform group-hover:scale-110 active:scale-95 z-20" id="play-video-btn">
+<span class="material-symbols-outlined text-4xl sm:text-5xl ml-1 text-[#06141B]">play_arrow</span>
+</button>
+<div class="mt-6 z-10 flex flex-col items-center">
+<span class="font-label-md text-label-md text-[#CCD0CF] tracking-wider uppercase font-semibold">
+              Masterclass Introductoria
+            </span>
+<span class="text-xs text-[#9BA8AB] mt-1">Duración estimada: 12 minutos de revelación estratégica</span>
+</div>
+</div>
+<div class="absolute bottom-4 left-6 right-6 flex items-center justify-between text-xs text-[#9BA8AB] border-t border-[#4A5C6A]/40 pt-3">
+<span class="flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-emerald-400"></span>
+            Disponible ahora
+          </span>
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-sm">hd</span>
+            Calidad Master 4K
+          </span>
+</div>
+</div>
+</div>
+</section>
+<!-- 3. Para Quién Es -->
+<section class="w-full bg-[#06141B] py-space-2xl md:py-space-3xl relative">
+<div class="max-w-4xl mx-auto px-margin text-center">
+<div class="inline-flex items-center gap-2 mb-4">
+<span class="material-symbols-outlined text-lg text-[#9BA8AB]">crisis_alert</span>
+<span class="font-label-sm text-label-sm tracking-[0.25em] text-[#9BA8AB] uppercase font-semibold">
+          Punto de Inflexión
+        </span>
+</div>
+<h2 class="font-display text-headline-lg-mobile md:text-headline-lg text-[#CCD0CF] leading-tight mb-8">
+        ¿Te sientes estancada en un trabajo donde no eres feliz, obligada, sin claridad y sin propósito?
+      </h2>
+<div class="w-16 h-px bg-[#4A5C6A] mx-auto mb-8"></div>
+<p class="font-body-lg text-body-lg text-[#9BA8AB] leading-relaxed max-w-3xl mx-auto text-balance font-light">
+        Reconocer este momento no es debilidad, es el primer síntoma de tu despertar profesional. Miles de mujeres con talento sienten esa misma desconexión diaria, esperando la validación externa o el momento “perfecto” para dar el salto. 
+      </p>
+<div class="mt-10 p-6 rounded-[20px] bg-[#11212D] border border-[#4A5C6A] max-w-2xl mx-auto text-left flex items-start gap-4">
+<span class="material-symbols-outlined text-2xl text-[#CCD0CF] shrink-0 mt-0.5">lightbulb</span>
+<div>
+<h4 class="font-headline-sm text-base text-[#CCD0CF] font-medium mb-1">La verdad detrás de la parálisis</h4>
+<p class="text-sm text-[#9BA8AB] leading-relaxed">
+            No te falta inteligencia ni recursos: te faltan herramientas precisas para desarticular los miedos automáticos que tu mente construyó para mantenerte a salvo en lo conocido.
+          </p>
+</div>
+</div>
+</div>
+</section>
+<!-- 4. Beneficios -->
+<section class="w-full bg-[#11212D] py-space-2xl md:py-space-3xl" id="la-masterclass">
+<div class="max-w-7xl mx-auto px-margin">
+<div class="text-center max-w-3xl mx-auto mb-space-2xl">
+<span class="font-label-sm text-label-sm tracking-[0.25em] text-[#9BA8AB] uppercase font-semibold block mb-3">
+          Resultados Tangibles
+        </span>
+<h2 class="font-display text-headline-lg-mobile md:text-headline-lg text-[#CCD0CF]">
+          Lo que vas a lograr y cómo te vas a <span class="italic">SENTIR</span>
+</h2>
+<p class="font-body-md text-body-md text-[#9BA8AB] mt-3">
+          Una transformación multidimensional que trasciende la simple teoría de negocios.
+        </p>
+</div>
+<!-- 4 Cards Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
+<!-- Card 1 -->
+<div class="p-8 rounded-[20px] bg-[#253745] border border-[#4A5C6A] hover:border-[#9BA8AB] transition-all duration-300 flex flex-col justify-between group">
+<div>
+<div class="w-14 h-14 rounded-2xl bg-[#11212D] border border-[#4A5C6A] flex items-center justify-center text-[#CCD0CF] mb-6 group-hover:bg-[#06141B] transition-colors">
+<span class="material-symbols-outlined text-3xl">psychology</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-[#CCD0CF] mb-3 leading-snug">
+              Descubrir las 7 creencias ocultas que te llevan a no tomar acción
+            </h3>
+<p class="font-body-md text-body-md text-[#9BA8AB] leading-relaxed">
+              Identificarás con precisión quirúrgica esos patrones subconscientes que justifican la postergación y te mantienen atada a una rutina laboral sin sentido.
+            </p>
+</div>
+<div class="mt-6 pt-4 border-t border-[#4A5C6A]/40 flex items-center text-xs text-[#CCD0CF] font-medium">
+<span>Fase 01 · Desactivación de Bloqueos</span>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="p-8 rounded-[20px] bg-[#253745] border border-[#4A5C6A] hover:border-[#9BA8AB] transition-all duration-300 flex flex-col justify-between group">
+<div>
+<div class="w-14 h-14 rounded-2xl bg-[#11212D] border border-[#4A5C6A] flex items-center justify-center text-[#CCD0CF] mb-6 group-hover:bg-[#06141B] transition-colors">
+<span class="material-symbols-outlined text-3xl">all_inclusive</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-[#CCD0CF] mb-3 leading-snug">
+              Reconocer los comportamientos que te alejan de la abundancia
+            </h3>
+<p class="font-body-md text-body-md text-[#9BA8AB] leading-relaxed">
+              Detectarás las micro-conductas diarias que frenan tu prosperidad mental, espiritual y económica, impidiendo la construcción de tu versión más audaz.
+            </p>
+</div>
+<div class="mt-6 pt-4 border-t border-[#4A5C6A]/40 flex items-center text-xs text-[#CCD0CF] font-medium">
+<span>Fase 02 · Apertura de Abundancia</span>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="p-8 rounded-[20px] bg-[#253745] border border-[#4A5C6A] hover:border-[#9BA8AB] transition-all duration-300 flex flex-col justify-between group">
+<div>
+<div class="w-14 h-14 rounded-2xl bg-[#11212D] border border-[#4A5C6A] flex items-center justify-center text-[#CCD0CF] mb-6 group-hover:bg-[#06141B] transition-colors">
+<span class="material-symbols-outlined text-3xl">explore</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-[#CCD0CF] mb-3 leading-snug">
+              Entrenar una mente enfocada, sin distracciones ni dispersión
+            </h3>
+<p class="font-body-md text-body-md text-[#9BA8AB] leading-relaxed">
+              Implementarás ejercicios prácticos diarios para cultivar una disciplina serena, con actitud y gozo genuino, extirpando la procrastinación crónica.
+            </p>
+</div>
+<div class="mt-6 pt-4 border-t border-[#4A5C6A]/40 flex items-center text-xs text-[#CCD0CF] font-medium">
+<span>Fase 03 · Enfoque Láser Diario</span>
+</div>
+</div>
+<!-- Card 4 -->
+<div class="p-8 rounded-[20px] bg-[#253745] border border-[#4A5C6A] hover:border-[#9BA8AB] transition-all duration-300 flex flex-col justify-between group">
+<div>
+<div class="w-14 h-14 rounded-2xl bg-[#11212D] border border-[#4A5C6A] flex items-center justify-center text-[#CCD0CF] mb-6 group-hover:bg-[#06141B] transition-colors">
+<span class="material-symbols-outlined text-3xl">favorite_border</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-[#CCD0CF] mb-3 leading-snug">
+              Actuar en coherencia con la vida que sueñas y elevar tu autoestima
+            </h3>
+<p class="font-body-md text-body-md text-[#9BA8AB] leading-relaxed">
+              Conectarás con tu esencia más profunda a través de prácticas de autovaloración que alinean tus acciones diarias con la visión empresarial que mereces.
+            </p>
+</div>
+<div class="mt-6 pt-4 border-t border-[#4A5C6A]/40 flex items-center text-xs text-[#CCD0CF] font-medium">
+<span>Fase 04 · Coherencia y Autoestima</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 5. Qué Incluye -->
+<section class="w-full bg-[#06141B] py-space-2xl md:py-space-3xl" id="que-incluye">
+<div class="max-w-5xl mx-auto px-margin">
+<div class="text-center max-w-2xl mx-auto mb-space-2xl">
+<span class="font-label-sm text-label-sm tracking-[0.25em] text-[#9BA8AB] uppercase font-semibold block mb-3">
+          Contenido del Programa
+        </span>
+<h2 class="font-display text-headline-lg-mobile md:text-headline-lg text-[#CCD0CF] mb-3">
+          Todo lo que incluye la masterclass
+        </h2>
+<p class="font-body-md text-body-md text-[#9BA8AB]">
+          Un programa completo y estructurado con herramientas de aplicación inmediata.
+        </p>
+</div>
+<!-- Horizontal Module Cards -->
+<div class="flex flex-col gap-4">
+<!-- Module 1 -->
+<div class="p-6 md:p-8 rounded-[20px] bg-[#253745] border border-[#4A5C6A] flex flex-col md:flex-row md:items-center justify-between gap-6 hover:border-[#9BA8AB] transition-colors">
+<div class="flex items-start gap-4">
+<div class="w-10 h-10 rounded-full bg-[#11212D] border border-[#4A5C6A] flex items-center justify-center text-[#CCD0CF] shrink-0 mt-1">
+<span class="material-symbols-outlined text-xl">check</span>
+</div>
+<div>
+<div class="inline-flex items-center gap-2 mb-1">
+<span class="text-[11px] font-semibold uppercase tracking-wider px-2 py-0.5 rounded-full bg-[#11212D] text-[#CCD0CF] border border-[#4A5C6A]">
+                  Módulo Principal
+                </span>
+<span class="text-xs text-[#9BA8AB]">Video HD + Guía</span>
+</div>
+<h3 class="font-headline-sm text-lg md:text-xl text-[#CCD0CF] font-medium">
+                Masterclass: «Los 7 frenos mentales que te limitan de emprender»
+              </h3>
+<p class="text-sm text-[#9BA8AB] mt-1">
+                La piedra angular para entender y neutralizar los mecanismos de auto-sabotaje.
+              </p>
+</div>
+</div>
+<div class="shrink-0 self-end md:self-center">
+<span class="text-xs text-[#9BA8AB] font-mono uppercase bg-[#06141B] px-3 py-1.5 rounded-full border border-[#4A5C6A]">Vitalicio</span>
+</div>
+</div>
+<!-- Module 2 -->
+<div class="p-6 md:p-8 rounded-[20px] bg-[#253745] border border-[#4A5C6A] flex flex-col md:flex-row md:items-center justify-between gap-6 hover:border-[#9BA8AB] transition-colors">
+<div class="flex items-start gap-4">
+<div class="w-10 h-10 rounded-full bg-[#11212D] border border-[#4A5C6A] flex items-center justify-center text-[#CCD0CF] shrink-0 mt-1">
+<span class="material-symbols-outlined text-xl">check</span>
+</div>
+<div>
+<div class="inline-flex items-center gap-2 mb-1">
+<span class="text-[11px] font-semibold uppercase tracking-wider px-2 py-0.5 rounded-full bg-[#11212D] text-[#CCD0CF] border border-[#4A5C6A]">
+                  Bono Especial 01
+                </span>
+<span class="text-xs text-[#9BA8AB]">Worksheet Descargable</span>
+</div>
+<h3 class="font-headline-sm text-lg md:text-xl text-[#CCD0CF] font-medium">
+                Guía «De Distraída a Imparable»
+              </h3>
+<p class="text-sm text-[#9BA8AB] mt-1">
+                Batería de ejercicios prácticos de concentración, gestión atencional y enfoque implacable.
+              </p>
+</div>
+</div>
+<div class="shrink-0 self-end md:self-center">
+<span class="text-xs text-[#9BA8AB] font-mono uppercase bg-[#06141B] px-3 py-1.5 rounded-full border border-[#4A5C6A]">Descargable</span>
+</div>
+</div>
+<!-- Module 3 -->
+<div class="p-6 md:p-8 rounded-[20px] bg-[#253745] border border-[#4A5C6A] flex flex-col md:flex-row md:items-center justify-between gap-6 hover:border-[#9BA8AB] transition-colors">
+<div class="flex items-start gap-4">
+<div class="w-10 h-10 rounded-full bg-[#11212D] border border-[#4A5C6A] flex items-center justify-center text-[#CCD0CF] shrink-0 mt-1">
+<span class="material-symbols-outlined text-xl">check</span>
+</div>
+<div>
+<div class="inline-flex items-center gap-2 mb-1">
+<span class="text-[11px] font-semibold uppercase tracking-wider px-2 py-0.5 rounded-full bg-[#11212D] text-[#CCD0CF] border border-[#4A5C6A]">
+                  Bono Especial 02
+                </span>
+<span class="text-xs text-[#9BA8AB]">Cuaderno Práctico</span>
+</div>
+<h3 class="font-headline-sm text-lg md:text-xl text-[#CCD0CF] font-medium">
+                Guía «Primero Crees en ti»
+              </h3>
+<p class="text-sm text-[#9BA8AB] mt-1">
+                Protocolo paso a paso para desarrollar autoconfianza inquebrantable y seguridad personal.
+              </p>
+</div>
+</div>
+<div class="shrink-0 self-end md:self-center">
+<span class="text-xs text-[#9BA8AB] font-mono uppercase bg-[#06141B] px-3 py-1.5 rounded-full border border-[#4A5C6A]">Descargable</span>
+</div>
+</div>
+<!-- Module 4 -->
+<div class="p-6 md:p-8 rounded-[20px] bg-[#253745] border border-[#4A5C6A] flex flex-col md:flex-row md:items-center justify-between gap-6 hover:border-[#9BA8AB] transition-colors">
+<div class="flex items-start gap-4">
+<div class="w-10 h-10 rounded-full bg-[#11212D] border border-[#4A5C6A] flex items-center justify-center text-[#CCD0CF] shrink-0 mt-1">
+<span class="material-symbols-outlined text-xl">check</span>
+</div>
+<div>
+<div class="inline-flex items-center gap-2 mb-1">
+<span class="text-[11px] font-semibold uppercase tracking-wider px-2 py-0.5 rounded-full bg-[#11212D] text-[#CCD0CF] border border-[#4A5C6A]">
+                  Bono Especial 03
+                </span>
+<span class="text-xs text-[#9BA8AB]">Lección Audiovisual</span>
+</div>
+<h3 class="font-headline-sm text-lg md:text-xl text-[#CCD0CF] font-medium">
+                Video «El Juego de la Vida»
+              </h3>
+<p class="text-sm text-[#9BA8AB] mt-1">
+                Una mirada reveladora para abrir tu mente y expandir tu campo de percepción y oportunidades.
+              </p>
+</div>
+</div>
+<div class="shrink-0 self-end md:self-center">
+<span class="text-xs text-[#9BA8AB] font-mono uppercase bg-[#06141B] px-3 py-1.5 rounded-full border border-[#4A5C6A]">Streaming</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 6. Oferta Destacada -->
+<section class="w-full bg-[#11212D] py-space-2xl md:py-space-3xl relative" id="adquirir">
+<div class="max-w-xl mx-auto px-margin">
+<!-- Pricing Card -->
+<div class="rounded-[20px] bg-[#253745] border border-[#4A5C6A] p-8 sm:p-10 text-center shadow-2xl relative overflow-hidden">
+<!-- Subtle Top Glow -->
+<div class="absolute top-0 left-1/2 -translate-x-1/2 w-48 h-1 bg-[#CCD0CF] opacity-60"></div>
+<!-- Badge -->
+<div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#11212D] border border-[#4A5C6A] text-[#CCD0CF] text-xs font-semibold uppercase tracking-widest mb-6">
+<span class="w-1.5 h-1.5 rounded-full bg-[#CCD0CF]"></span>
+<span>Por tiempo limitado</span>
+</div>
+<h3 class="font-headline-sm text-2xl text-[#CCD0CF] mb-2 font-medium">
+          Acceso Completo e Inmediato
+        </h3>
+<p class="text-sm text-[#9BA8AB] mb-6">
+          Todo el contenido de la masterclass + los 3 bonos prácticos incluidos de por vida.
+        </p>
+<!-- Price Stack -->
+<div class="py-6 border-y border-[#4A5C6A]/50 mb-8">
+<div class="text-[#9BA8AB] line-through text-sm font-medium mb-1">
+            Valor regular USD $267,00
+          </div>
+<div class="font-display text-5xl sm:text-6xl text-[#CCD0CF] font-bold tracking-tight">
+            USD $67<span class="text-3xl font-light">,00</span>
+</div>
+<p class="text-xs text-[#9BA8AB] mt-2">
+            Ahorro del 75% disponible solo en esta convocatoria
+          </p>
+</div>
+<!-- Buy Button -->
+<a class="w-full inline-flex items-center justify-center px-8 py-4 rounded-full bg-[#CCD0CF] text-[#06141B] font-label-lg text-label-lg font-semibold shadow-xl hover:bg-white hover:scale-[1.02] transition-all duration-300" href="https://pay.hotmart.com/I105509477M?bid=1778177175956" rel="noopener noreferrer" target="_blank">
+<span>Adquirir masterclass</span>
+<span class="material-symbols-outlined ml-2 text-xl">shopping_cart_checkout</span>
+</a>
+<!-- Guarantees -->
+<div class="mt-8 flex flex-col gap-2 text-xs text-[#9BA8AB]">
+<div class="flex items-center justify-center gap-2">
+<span class="material-symbols-outlined text-[16px] text-[#CCD0CF]">lock</span>
+<span>Pago 100% seguro procesado por Hotmart</span>
+</div>
+<div class="flex items-center justify-center gap-2">
+<span class="material-symbols-outlined text-[16px] text-[#CCD0CF]">all_inclusive</span>
+<span>Acceso inmediato y de por vida a la plataforma</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 7. Sobre Diana -->
+<section class="w-full bg-[#06141B] py-space-2xl md:py-space-3xl" id="sobre-diana">
+<div class="max-w-7xl mx-auto px-margin">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl lg:gap-space-2xl items-center">
+<!-- Image Column -->
+<div class="lg:col-span-5 flex justify-center">
+<div class="relative w-full max-w-[380px] aspect-[4/5] rounded-[20px] overflow-hidden border border-[#4A5C6A] bg-[#253745] shadow-2xl">
+<img alt="Diana Yela - Ingeniera Comercial y Mentora de Negocios" class="w-full h-full object-cover object-top" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBbRFoKd84baBzOe1ZsB-TZ1ZtIl_JsXDcLoYiNlrnk1sHjHMgxzCji7qPsdej4WGcZWV6C5KCQCZhn6Mq74XTL5ug4k-Qka3noV5WFTDs8iN6Q47eDKfbCUpZZrFrABL-oqCn4T8uEJOeBuYrmZefhnoYdiGfWAQ5smtLyoM3z-WuPlW2zf6YiPf20rp26fxBbbKmKpPYM_g2Eowmtb0EnoVN8eIMiGN0yuhe_3UJZ">
+<div class="absolute inset-0 bg-gradient-to-t from-[#06141B]/80 via-transparent to-transparent"></div>
+</div>
+</div>
+<!-- Bio Column -->
+<div class="lg:col-span-7 flex flex-col gap-space-md">
+<span class="font-label-sm text-label-sm tracking-[0.25em] text-[#9BA8AB] uppercase font-semibold">
+            Sobre Mí
+          </span>
+<h2 class="font-display text-headline-lg-mobile md:text-headline-lg text-[#CCD0CF]">
+            Soy Diana Yela
+          </h2>
+<p class="font-body-md text-body-md text-[#9BA8AB] leading-relaxed">
+            Ing. Comercial de profesión, apasionada del crecimiento personal y el estudio de la mente por vocación. Llevo 6 años aportando, creando y construyendo en el mundo del emprendimiento, comprendiendo el comportamiento humano femenino y la conexión profunda entre mente, emociones y espíritu.
+          </p>
+<div class="p-6 rounded-[20px] bg-[#11212D] border border-[#4A5C6A] my-2">
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-2xl text-[#CCD0CF] shrink-0">format_quote</span>
+<p class="font-headline-sm text-base md:text-lg text-[#CCD0CF] italic leading-relaxed">
+                Mi propósito es que te conviertas en una emprendedora con mentalidad fuerte, con carácter y plenitud sin perder tu esencia, gozo y tu alegría en el camino.
+              </p>
+</div>
+</div>
+<!-- 3 Metrics Grid -->
+<div class="grid grid-cols-3 gap-4 pt-2">
+<div class="p-4 rounded-[20px] bg-[#253745] border border-[#4A5C6A] text-center">
+<span class="font-display text-2xl md:text-3xl text-[#CCD0CF] font-bold block mb-1">6 Años</span>
+<span class="text-xs text-[#9BA8AB]">Emprendiendo y formando mujeres</span>
+</div>
+<div class="p-4 rounded-[20px] bg-[#253745] border border-[#4A5C6A] text-center">
+<span class="font-display text-2xl md:text-3xl text-[#CCD0CF] font-bold block mb-1">7 Frenos</span>
+<span class="text-xs text-[#9BA8AB]">Mentales resueltos de raíz</span>
+</div>
+<div class="p-4 rounded-[20px] bg-[#253745] border border-[#4A5C6A] text-center">
+<span class="font-display text-2xl md:text-3xl text-[#CCD0CF] font-bold block mb-1">3 Bonos</span>
+<span class="text-xs text-[#9BA8AB]">Prácticos con acceso vitalicio</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 8. Cierre Inspiracional -->
+<section class="w-full bg-[#11212D] py-space-2xl md:py-space-3xl border-t border-[#4A5C6A]/30 relative text-center">
+<div class="max-w-4xl mx-auto px-margin flex flex-col items-center">
+<span class="material-symbols-outlined text-4xl text-[#CCD0CF] mb-6">stars</span>
+<blockquote class="font-display text-headline-md md:text-headline-lg text-[#CCD0CF] leading-tight max-w-3xl mb-6">
+        “Si estás aquí es porque estás dispuesta a dejar el cansancio, la frustración y el estrés de una vida que ya no quieres.”
+      </blockquote>
+<p class="font-body-lg text-body-lg text-[#9BA8AB] max-w-2xl mb-space-xl font-light">
+        Avanzando con certeza, valentía y confianza hacia la vida que sabes que te mereces.
+      </p>
+<a class="inline-flex items-center justify-center px-10 py-5 rounded-full bg-[#CCD0CF] text-[#06141B] font-label-lg text-label-lg font-semibold shadow-2xl hover:bg-white hover:scale-[1.03] transition-all duration-300" href="https://pay.hotmart.com/I105509477M?bid=1778177175956" rel="noopener noreferrer" target="_blank">
+<span>Adquirir masterclass</span>
+<span class="material-symbols-outlined ml-2 text-xl">arrow_forward</span>
+</a>
+<div class="mt-8 text-xs text-[#9BA8AB] tracking-wide">
+        Tu momento de decisión comienza hoy · Garantía total de satisfacción
+      </div>
+</div>
+</section>
+</div>
+<script>
+  // Simple micro-interaction for video play action
+  document.getElementById('play-video-btn')?.addEventListener('click', function() {
+    alert('Redirigiendo a la lección introductoria de Diana Yela...');
+  });
+</script></main><footer class="w-full bg-primary-container border-t border-outline-variant"><div class="max-w-7xl mx-auto px-margin py-space-2xl"><div class="flex flex-col md:flex-row md:items-center justify-between gap-space-xl pb-space-xl border-b border-outline-variant/60"><div class="flex flex-col gap-space-xs"><a class="flex items-center gap-space-xs text-on-surface hover:text-primary transition-colors focus:outline-none" href="#inicio"><span class="font-body-lg text-body-lg font-medium tracking-tight">Negocios con</span><span class="font-headline-sm text-headline-sm italic font-normal tracking-wide text-primary-fixed">Diana</span></a><p class="font-body-sm text-body-sm text-on-surface-variant">Estrategia y mentoría ejecutiva para escalar visiones de alto impacto.</p></div><div class="flex flex-col sm:flex-row items-start sm:items-center gap-space-xl"><a class="flex items-center gap-space-xs font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" href="mailto:hola@negocioscondiana.com"><span class="material-symbols-outlined text-[18px]">mail</span>hola@negocioscondiana.com</a><a aria-label="Canal de YouTube" class="flex items-center gap-space-xs font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" href="https://youtube.com" rel="noopener noreferrer" target="_blank"><span class="material-symbols-outlined text-[20px]">smart_display</span><span>YouTube</span></a></div></div><div class="flex flex-col sm:flex-row items-center justify-between gap-space-md pt-space-lg"><p class="font-body-sm text-body-sm text-on-surface-variant text-center sm:text-left">© 2026 Negocios con Diana. Todos los derechos reservados.</p><div class="flex items-center gap-space-lg"><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="privacidad" href="#privacidad">Privacidad</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="terminos" href="#terminos">Términos</a></div></div></div></footer>
+
+</body></html>

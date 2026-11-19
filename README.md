@@ -14,7 +14,7 @@ Proyecto de práctica de nniklab: rediseño desde cero de la landing **negociosc
 
 ## Enlaces
 
-- **Sitio publicado (prueba):** https://nniklab.github.io/clase_ux/
+- **Sitio publicado (prueba):** https://nniklab.github.io/clase_UX/
 - **Vista previa en Claude Design:** https://claude.ai/artifact/33LTKyE76RhoWP6NVrhJCA
 
 El sitio se publica solo: cada cambio en `05-sitio` dentro de `main` actualiza la rama `gh-pages`, que es la que sirve GitHub Pages.
